@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Naz Roti Palace · Authentic Trinidadian Food in Miramar, FL</title>
+<meta name="description" content="Naz Roti Palace — a family-run Trinidadian roti shop in Miramar, FL. Fresh-made buss-up-shut and dalpuri roti, curry goat, doubles, aloo pie and channa. Real Trini flavor, just like home. 4.8★ from 158 reviews." />
+<meta name="theme-color" content="#3a2317" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Figtree:wght@300;400;500;600;700;800&family=Pacifico&display=swap" rel="stylesheet" />
+
+<meta property="og:type" content="restaurant" />
+<meta property="og:title" content="Naz Roti Palace · Authentic Trinidadian Food in Miramar, FL" />
+<meta property="og:description" content="Fresh-made roti, curry goat, doubles and channa — real Trinidadian flavor, just like home. A family-run roti shop in Miramar, FL." />
+<meta property="og:image" content="https://images.pexels.com/photos/6419694/pexels-photo-6419694.jpeg?auto=compress&cs=tinysrgb&w=1200" />
+<meta property="og:locale" content="en_US" />
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org","@type":"Restaurant","name":"Naz Roti Palace",
+  "servesCuisine":["Trinidadian","Caribbean","Indian"],"priceRange":"$$","telephone":"+1-954-987-3964",
+  "url":"https://elitanz.github.io/naz-roti-palace/",
+  "address":{"@type":"PostalAddress","streetAddress":"6329 Miramar Pkwy","addressLocality":"Miramar","addressRegion":"FL","postalCode":"33023","addressCountry":"US"},
+  "geo":{"@type":"GeoCoordinates","latitude":25.9795,"longitude":-80.2330},
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"11:30","closes":"20:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"11:30","closes":"19:00"}
+  ],
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"158"},
+  "sameAs":["https://www.facebook.com/nazrotipalace/"]
+}
+</script>
+
+<style>
+  :root{
+    --brown:#3a2317;--brown-2:#4d3122;--brown-deep:#2a190f;
+    --curry:#e0a020;--turmeric:#f4b62b;--turmeric-br:#ffc848;
+    --scotch:#e2521d;--scotch-2:#c8410f;
+    --cream:#fdf3df;--cream-2:#f6e7c8;
+    --callaloo:#3f7a3a;--callaloo-deep:#2e5e2b;
+    --ink:#2c1d12;--maxw:1180px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;overflow-x:hidden}
+  body{font-family:'Figtree',system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.65;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}img{display:block;max-width:100%}
+  section{scroll-margin-top:74px}
+
+  /* ---- Madras-check signature band ---- */
+  .madras{
+    height:20px;
+    background:
+      repeating-linear-gradient(90deg,rgba(226,82,29,.85) 0 10px,transparent 10px 30px),
+      repeating-linear-gradient(0deg,rgba(63,122,58,.8) 0 10px,transparent 10px 30px),
+      repeating-linear-gradient(90deg,var(--turmeric) 0 30px,var(--curry) 30px 60px);
+    border-top:3px solid var(--brown-deep);border-bottom:3px solid var(--brown-deep);
+  }
+
+  /* ---- Nav ---- */
+  header.nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:18px clamp(18px,5vw,48px);transition:.4s}
+  header.nav.scrolled{background:rgba(42,25,15,.97);padding:11px clamp(18px,5vw,48px);box-shadow:0 6px 26px rgba(0,0,0,.32)}
+  .brand{display:flex;flex-direction:column;color:#fff}
+  .brand .mark{font-family:'Chonburi';font-size:22px;line-height:1;color:var(--turmeric-br)}
+  .brand .mark span{color:#fff}
+  .brand .sub{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#e6d3b3;margin-top:4px}
+  .navlinks{display:flex;gap:28px;align-items:center}
+  .navlinks a{color:#fff;font-size:14px;font-weight:500;opacity:.92;transition:color .2s}
+  .navlinks a:hover{color:var(--turmeric-br)}
+  .nav-call{border:1.5px solid var(--turmeric);color:var(--turmeric-br)!important;padding:8px 17px;border-radius:40px;font-weight:700;opacity:1!important}
+  .nav-call:hover{background:var(--turmeric);color:var(--brown-deep)!important}
+  .burger{display:none;flex-direction:column;gap:5px;cursor:pointer}
+  .burger span{width:26px;height:2px;background:#fff}
+
+  /* ---- Hero ---- */
+  .hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;color:#fff}
+  .hero-bg{position:absolute;inset:0;background:url('https://images.pexels.com/photos/6419694/pexels-photo-6419694.jpeg?auto=compress&cs=tinysrgb&w=1800') center/cover no-repeat;animation:heroZoom 26s ease-out infinite alternate}
+  @keyframes heroZoom{from{transform:scale(1.05)}to{transform:scale(1.16)}}
+  .hero-veil{position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(42,25,15,.42),rgba(42,25,15,.82) 82%),linear-gradient(to bottom,rgba(42,25,15,.72),rgba(42,25,15,.32) 38%,rgba(42,25,15,.88))}
+  .hero-inner{position:relative;z-index:3;padding:0 22px;max-width:960px}
+  .hero .eyebrow{font-size:12px;letter-spacing:5px;text-transform:uppercase;color:var(--turmeric-br);margin-bottom:12px;font-weight:700}
+  .hero .script-aside{font-family:'Pacifico',cursive;font-size:clamp(26px,5vw,44px);color:var(--turmeric-br);display:inline-block;transform:rotate(-3deg);margin-bottom:6px}
+  .hero h1{font-family:'Chonburi';font-size:clamp(46px,10vw,118px);line-height:.96;letter-spacing:-1px;color:#fff;text-shadow:0 5px 30px rgba(0,0,0,.5)}
+  .hero h1 .scotch{color:var(--scotch)}
+  .hero .tag{font-size:clamp(17px,2.4vw,24px);color:#f3e3c8;margin-top:14px;font-weight:400;font-style:italic}
+  .hero .ratings{margin-top:24px;display:flex;gap:8px 24px;justify-content:center;flex-wrap:wrap;font-size:14px;color:#eeddc0}
+  .hero .ratings b{color:var(--turmeric-br)}
+  .hero-cta{margin-top:34px;display:flex;gap:15px;justify-content:center;flex-wrap:wrap}
+  .btn{display:inline-block;padding:15px 32px;border-radius:44px;font-weight:700;font-size:15px;letter-spacing:.3px;transition:transform .18s,box-shadow .18s,background .2s;cursor:pointer}
+  .btn-curry{background:var(--turmeric);color:var(--brown-deep);box-shadow:0 10px 24px rgba(244,182,43,.34)}
+  .btn-curry:hover{transform:translateY(-3px);background:var(--turmeric-br)}
+  .btn-scotch{background:var(--scotch);color:#fff;box-shadow:0 10px 24px rgba(226,82,29,.34)}
+  .btn-scotch:hover{transform:translateY(-3px);background:var(--scotch-2)}
+  .btn-ghost{border:1.5px solid #fff;color:#fff}
+  .btn-ghost:hover{background:#fff;color:var(--brown-deep);transform:translateY(-3px)}
+  .scroll-chev{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:3;color:var(--turmeric-br);font-size:26px;animation:bob 1.8s ease-in-out infinite}
+  @keyframes bob{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(9px)}}
+
+  /* ---- shells ---- */
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(18px,5vw,40px)}
+  .sec{padding:clamp(64px,9vw,116px) 0}
+  .sec-eyebrow{font-family:'Pacifico',cursive;font-size:27px;color:var(--scotch);display:inline-block;transform:rotate(-2deg);margin-bottom:4px}
+  .sec-title{font-family:'Chonburi';font-size:clamp(30px,4.6vw,52px);line-height:1.06;color:var(--brown);letter-spacing:-.5px}
+  .sec-title .accent{color:var(--scotch)}
+  .rule{width:64px;height:4px;background:var(--turmeric);margin:18px 0 0;border-radius:3px}
+
+  /* ---- Story ---- */
+  .story{background:var(--brown);color:#f3e3c8}
+  .story .sec-eyebrow{color:var(--turmeric-br)}
+  .story .sec-title{color:#fff}
+  .story-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,5vw,66px);align-items:center}
+  .story-copy p{margin-top:18px;font-size:16.5px;color:#e8d6b8;line-height:1.8}
+  .story-copy .lead{font-size:21px;color:#fff;font-weight:600;line-height:1.5}
+  .story-photo{position:relative}
+  .story-photo img{width:100%;height:500px;object-fit:cover;border-radius:8px;box-shadow:0 26px 56px rgba(0,0,0,.5);border:5px solid var(--turmeric)}
+  .story-badge{position:absolute;bottom:-20px;left:-14px;background:var(--scotch);color:#fff;font-family:'Pacifico';font-size:22px;padding:12px 24px;border-radius:40px;transform:rotate(-4deg);box-shadow:0 12px 28px rgba(0,0,0,.4);line-height:1}
+
+  /* ---- Menu ---- */
+  .menu{background:var(--cream)}
+  .menu-head{text-align:center;margin-bottom:48px}
+  .menu-head .rule{margin:18px auto 0}
+  .menu-note{font-style:italic;color:#7c5f42;margin-top:14px;font-size:16px}
+  .menu-cols{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,72px)}
+  .menu-block{margin-bottom:36px}
+  .menu-block h3{font-family:'Chonburi';font-size:17px;letter-spacing:.3px;color:#fff;background:var(--callaloo-deep);display:inline-block;padding:7px 18px;border-radius:40px;margin-bottom:12px}
+  .menu-block.curry h3{background:var(--scotch)}
+  .menu-block.gold h3{background:var(--curry);color:var(--brown-deep)}
+  .item-row{padding:13px 0;border-bottom:1.5px dotted #d9c39a}
+  .item-row:last-child{border-bottom:none}
+  .item-row .nm{display:flex;align-items:baseline;gap:10px;font-weight:700;font-size:17.5px;color:var(--brown)}
+  .item-row .nm .star{color:var(--scotch);font-size:13px;font-weight:800}
+  .item-row .nm::after{content:"";flex:1;height:0;border-bottom:1.5px dotted #d9c39a;transform:translateY(-5px)}
+  .item-row .desc{display:block;font-style:italic;font-size:14.5px;color:#7c5f42;margin-top:4px;line-height:1.55}
+  .callout{background:var(--brown);color:#f3e3c8;border-radius:14px;padding:24px 26px;border:2px solid var(--turmeric)}
+  .callout h3{font-family:'Chonburi';color:var(--turmeric-br);font-size:21px;margin-bottom:6px}
+  .callout p{font-style:italic;font-size:15.5px;color:#e8d6b8;line-height:1.55}
+
+  /* ---- Gallery ---- */
+  .gallery{background:var(--brown-deep)}
+  .gallery .sec-title{color:#fff}.gallery .sec-eyebrow{color:var(--turmeric-br)}
+  .grid-photos{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .grid-photos figure{position:relative;overflow:hidden;border-radius:8px;height:260px}
+  .grid-photos img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
+  .grid-photos figure:hover img{transform:scale(1.08)}
+  .grid-photos figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 16px 12px;color:#fff;font-weight:700;font-size:15px;background:linear-gradient(to top,rgba(42,25,15,.92),transparent)}
+
+  /* ---- Reviews ---- */
+  .reviews{background:var(--cream-2)}
+  .rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:46px}
+  .rev-card{background:#fff;border-radius:14px;padding:30px 26px;box-shadow:0 12px 30px rgba(58,35,23,.12);border-bottom:5px solid var(--turmeric)}
+  .rev-card .qm{font-family:'Chonburi';font-size:48px;color:var(--scotch);line-height:.5}
+  .rev-card p{font-size:16.5px;font-style:italic;color:var(--ink);margin:8px 0 16px;line-height:1.6}
+  .rev-card .who{font-weight:700;color:var(--callaloo-deep);font-size:14px}
+  .rev-card .stars{color:var(--turmeric);font-size:14px;letter-spacing:2px}
+  .rev-lead{text-align:center;max-width:680px;margin:12px auto 0;font-style:italic;font-size:18px;color:#7c5f42}
+
+  /* ---- Visit ---- */
+  .visit{background:var(--callaloo-deep);color:#eaf3e6}
+  .visit .sec-title{color:#fff}.visit .sec-eyebrow{color:var(--turmeric-br)}
+  .visit-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(30px,5vw,62px);margin-top:16px}
+  .visit-info .row{display:flex;gap:14px;padding:17px 0;border-bottom:1px solid rgba(255,255,255,.18)}
+  .visit-info .ic{color:var(--turmeric-br);font-size:20px;width:26px;flex-shrink:0;text-align:center}
+  .visit-info b{display:block;font-size:15px;color:#fff;margin-bottom:2px}
+  .visit-info span{font-size:15px;color:#d6e6d0}
+  .hours-line{display:flex;justify-content:space-between;font-size:14.5px;color:#d6e6d0;padding:3px 0}
+  .hours-line b{color:var(--turmeric-br)}
+  .visit-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:24px}
+  .map-wrap{border-radius:10px;overflow:hidden;border:4px solid var(--turmeric);box-shadow:0 18px 40px rgba(0,0,0,.35);min-height:380px}
+  .map-wrap iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+
+  /* ---- Closing ---- */
+  .closing{position:relative;text-align:center;color:#fff;background:linear-gradient(rgba(42,25,15,.84),rgba(42,25,15,.92)),url('https://images.pexels.com/photos/5835353/pexels-photo-5835353.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover fixed;padding:clamp(76px,11vw,140px) 0}
+  .closing .script-aside{font-family:'Pacifico',cursive;font-size:32px;color:var(--turmeric-br);transform:rotate(-2deg);display:inline-block}
+  .closing h2{font-family:'Chonburi';font-size:clamp(34px,6vw,68px);margin:6px 0 12px;letter-spacing:-.5px}
+  .closing p{font-style:italic;font-size:19px;color:#f0e0c4;max-width:560px;margin:0 auto 28px}
+
+  /* ---- Footer ---- */
+  footer{background:var(--brown-deep);color:#cbb795;padding:54px 0 28px}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px;align-items:start}
+  footer .mark{font-family:'Chonburi';font-size:24px;color:var(--turmeric-br)}
+  footer .mark span{color:#fff}
+  footer .fcol h4{font-family:'Chonburi';color:#fff;font-size:15px;margin-bottom:12px}
+  footer .fcol a,footer .fcol p{display:block;font-size:14px;color:#cbb795;margin-bottom:7px;transition:color .2s}
+  footer .fcol a:hover{color:var(--turmeric-br)}
+  .foot-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:36px;padding-top:20px;text-align:center;font-size:12.5px;color:#9d8a6a}
+
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s,transform .7s}
+  .reveal.visible{opacity:1;transform:none}.reveal.instant{transition:none}
+
+  @media(max-width:860px){
+    .navlinks{position:fixed;inset:0 0 0 auto;width:min(78vw,320px);background:rgba(42,25,15,.99);flex-direction:column;justify-content:center;gap:30px;transform:translateX(100%);transition:transform .35s;box-shadow:-10px 0 40px rgba(0,0,0,.5)}
+    .navlinks.open{transform:none}.navlinks a{font-size:20px}.burger{display:flex;z-index:120}
+    .story-grid,.visit-grid,.menu-cols,.foot-grid{grid-template-columns:1fr}
+    .grid-photos{grid-template-columns:1fr 1fr}.rev-grid{grid-template-columns:1fr}
+    .story-photo img{height:380px}.map-wrap{min-height:320px}
+  }
+  @media(max-width:520px){.grid-photos{grid-template-columns:1fr}.hero .ratings{flex-direction:column;gap:5px}}
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#top">
+    <div class="mark">Naz <span>Roti Palace</span></div>
+    <div class="sub">Authentic Trinidadian · Miramar, FL</div>
+  </a>
+  <nav class="navlinks" id="navlinks">
+    <a href="#story" onclick="closeNav()">Our Story</a>
+    <a href="#menu" onclick="closeNav()">Menu</a>
+    <a href="#gallery" onclick="closeNav()">Gallery</a>
+    <a href="#reviews" onclick="closeNav()">Reviews</a>
+    <a href="#visit" onclick="closeNav()">Visit</a>
+    <a class="nav-call" href="tel:+19549873964" onclick="closeNav()">(954) 987-3964</a>
+  </nav>
+  <div class="burger" id="burger" onclick="toggleNav()"><span></span><span></span><span></span></div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-bg"></div><div class="hero-veil"></div>
+  <div class="hero-inner">
+    <div class="eyebrow">Authentic Trinidadian Roti Shop · Miramar, FL</div>
+    <div class="script-aside">Taste ah Trini!</div>
+    <h1>Naz <span class="scotch">Roti Palace</span></h1>
+    <p class="tag">Real Trinidadian cooking — fresh roti, big flavor, just like home.</p>
+    <div class="ratings">
+      <span>★ <b>4.8</b> · 158 reviews</span>
+      <span><b>Family-run</b> · worth the wait, every time</span>
+    </div>
+    <div class="hero-cta">
+      <a class="btn btn-curry" href="#menu">See the Menu</a>
+      <a class="btn btn-ghost" href="tel:+19549873964">Call to Order</a>
+    </div>
+  </div>
+  <a href="#story" class="scroll-chev" aria-label="Scroll down">⌄</a>
+</section>
+
+<div class="madras" aria-hidden="true"></div>
+
+<!-- STORY -->
+<section class="sec story" id="story">
+  <div class="wrap story-grid">
+    <div class="story-copy reveal">
+      <span class="sec-eyebrow">Cook fresh, cook with love</span>
+      <h2 class="sec-title">A taste of Trinidad,<br>right here in Miramar</h2>
+      <div class="rule"></div>
+      <p class="lead">Every roti is rolled and cooked fresh to order — soft, layered buss-up-shut and dalpuri that comes out warm and ready to soak up the curry.</p>
+      <p>The curry is rich but never too salty. The goat is slow-cooked and tender. And the doubles? Get there early, because the regulars know — they go fast. It's the food that reminds Trini families of home, made the proper way by people who care how it tastes.</p>
+      <p>Yes, there may be a little wait while it's all made fresh. Everyone agrees: it's worth it. That's how Naz Roti Palace earned 4.8 stars and a crowd that keeps coming back.</p>
+    </div>
+    <div class="story-photo reveal">
+      <img src="https://images.pexels.com/photos/13084520/pexels-photo-13084520.jpeg?auto=compress&cs=tinysrgb&w=1100" alt="Fresh roti cooking on a hot griddle" loading="lazy" />
+      <div class="story-badge">Fresh to order!</div>
+    </div>
+  </div>
+</section>
+
+<div class="madras" aria-hidden="true"></div>
+
+<!-- MENU -->
+<section class="sec menu" id="menu">
+  <div class="wrap">
+    <div class="menu-head reveal">
+      <span class="sec-eyebrow">Come hungry</span>
+      <h2 class="sec-title">The <span class="accent">Menu</span></h2>
+      <div class="rule"></div>
+      <p class="menu-note">A few of the favorites — every roti rolled and cooked fresh to order. Call ahead to beat the doubles rush.</p>
+    </div>
+
+    <div class="menu-cols">
+      <div>
+        <div class="menu-block reveal">
+          <h3>Roti</h3>
+          <div class="item-row"><span class="nm">Curry Goat Roti <span class="star">★ favorite</span></span><span class="desc">Slow-cooked, tender curried goat wrapped in soft buss-up-shut.</span></div>
+          <div class="item-row"><span class="nm">Curry Chicken Roti</span><span class="desc">The classic — rich curry chicken in fresh dalpuri roti.</span></div>
+          <div class="item-row"><span class="nm">Beef Roti</span><span class="desc">Hearty curried beef, generously filled.</span></div>
+          <div class="item-row"><span class="nm">Boneless Chicken Roti</span><span class="desc">All the flavor, easy to enjoy.</span></div>
+        </div>
+
+        <div class="menu-block curry reveal">
+          <h3>Plates &amp; Dalpuri</h3>
+          <div class="item-row"><span class="nm">Goat Curry Plate</span><span class="desc">A full plate of curried goat served with dalpuri.</span></div>
+          <div class="item-row"><span class="nm">Curry Chicken Plate</span><span class="desc">Rich curry chicken with rice or roti.</span></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="menu-block gold reveal">
+          <h3>Doubles &amp; Sharers</h3>
+          <div class="item-row"><span class="nm">Doubles <span class="star">★ go early!</span></span><span class="desc">Trinidad's beloved street food — curried channa on soft, pillowy bara.</span></div>
+          <div class="item-row"><span class="nm">Aloo Pie</span><span class="desc">Crispy fried pastry stuffed with spiced potato.</span></div>
+          <div class="item-row"><span class="nm">Aloo Pie with Meat</span><span class="desc">The aloo pie, loaded up with curried meat.</span></div>
+        </div>
+
+        <div class="menu-block reveal">
+          <h3>Sides</h3>
+          <div class="item-row"><span class="nm">Channa</span><span class="desc">Curried chickpeas, spiced just right.</span></div>
+          <div class="item-row"><span class="nm">Pumpkin</span><span class="desc">Sweet, savory, and comforting.</span></div>
+        </div>
+
+        <div class="callout reveal">
+          <h3>Ask what's cooking today 🍛</h3>
+          <p>The kitchen cooks fresh daily, so there's often a special on the pot. Give us a call and we'll tell you what's good.</p>
+          <a class="btn btn-curry" style="margin-top:14px" href="tel:+19549873964">Call (954) 987-3964</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="sec gallery" id="gallery">
+  <div class="wrap">
+    <div class="menu-head reveal">
+      <span class="sec-eyebrow">From the kitchen</span>
+      <h2 class="sec-title">Real Trini Plates</h2>
+      <div class="rule" style="margin:18px auto 0"></div>
+    </div>
+    <div class="grid-photos">
+      <figure class="reveal"><img src="https://images.pexels.com/photos/6419701/pexels-photo-6419701.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Curried meat on fresh roti with herbs" loading="lazy"><figcaption>Curry &amp; Roti</figcaption></figure>
+      <figure class="reveal"><img src="https://images.pexels.com/photos/9609846/pexels-photo-9609846.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Rich curried goat in a traditional bowl" loading="lazy"><figcaption>Curry Goat</figcaption></figure>
+      <figure class="reveal"><img src="https://images.pexels.com/photos/7364662/pexels-photo-7364662.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Chickpea channa curry with roti" loading="lazy"><figcaption>Channa &amp; Roti</figcaption></figure>
+      <figure class="reveal"><img src="https://images.pexels.com/photos/9287035/pexels-photo-9287035.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Curried chickpeas garnished with herbs" loading="lazy"><figcaption>Curried Channa</figcaption></figure>
+      <figure class="reveal"><img src="https://images.pexels.com/photos/12427834/pexels-photo-12427834.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Freshly cooked roti in baskets" loading="lazy"><figcaption>Fresh Roti</figcaption></figure>
+      <figure class="reveal"><img src="https://images.pexels.com/photos/36388454/pexels-photo-36388454.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Fried pastry with curried chickpeas and chutneys" loading="lazy"><figcaption>Aloo &amp; Channa</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="sec reviews" id="reviews">
+  <div class="wrap">
+    <div class="menu-head reveal" style="text-align:center">
+      <span class="sec-eyebrow">Plenty love</span>
+      <h2 class="sec-title">What Guests Say</h2>
+      <div class="rule" style="margin:18px auto 0"></div>
+      <p class="rev-lead">4.8 stars and a loyal crowd — here's why folks keep coming back.</p>
+    </div>
+    <div class="rev-grid">
+      <div class="rev-card reveal"><div class="qm">“</div><p>Curry is flavorful and not salty. The roti is delicious — soft, with a nice texture.</p><div class="stars">★★★★★</div><div class="who">— Google reviewer</div></div>
+      <div class="rev-card reveal"><div class="qm">“</div><p>The authentic taste reminds me of home. Worth the wait every single time.</p><div class="stars">★★★★★</div><div class="who">— Yelp reviewer</div></div>
+      <div class="rev-card reveal"><div class="qm">“</div><p>Excellent service and a warm, inviting atmosphere. The goat roti is amazing.</p><div class="stars">★★★★★</div><div class="who">— Google reviewer</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- VISIT -->
+<section class="sec visit" id="visit">
+  <div class="wrap">
+    <div class="menu-head reveal" style="text-align:left">
+      <span class="sec-eyebrow">Find us</span>
+      <h2 class="sec-title">Come Get Yours</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="visit-grid">
+      <div class="visit-info reveal">
+        <div class="row"><div class="ic">📍</div><div><b>Address</b><span>6329 Miramar Pkwy, Miramar, FL 33023</span></div></div>
+        <div class="row"><div class="ic">📞</div><div><b>Phone</b><span><a href="tel:+19549873964" style="color:var(--turmeric-br);font-weight:700">(954) 987-3964</a></span></div></div>
+        <div class="row"><div class="ic">🕦</div><div style="flex:1"><b>Hours</b>
+          <div class="hours-line"><span>Monday – Friday</span><b>11:30 AM – 8:00 PM</b></div>
+          <div class="hours-line"><span>Saturday</span><b>11:30 AM – 7:00 PM</b></div>
+          <div class="hours-line"><span>Sunday</span><b>Closed</b></div>
+        </div></div>
+        <div class="visit-actions">
+          <a class="btn btn-curry" href="https://www.google.com/maps/dir/?api=1&destination=6329+Miramar+Pkwy+Miramar+FL+33023" target="_blank" rel="noopener">Directions</a>
+          <a class="btn btn-ghost" style="border-color:#fff" href="https://www.facebook.com/nazrotipalace/" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+      <div class="map-wrap reveal">
+        <iframe title="Map to Naz Roti Palace, Miramar FL" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q=6329+Miramar+Pkwy+Miramar+FL+33023&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING -->
+<section class="closing">
+  <span class="script-aside">Come lime with we!</span>
+  <h2>Hungry yet?</h2>
+  <p>Pull up, order the goat roti and a doubles, and taste why Naz keeps Miramar coming back for more.</p>
+  <div class="hero-cta">
+    <a class="btn btn-curry" href="tel:+19549873964">Call (954) 987-3964</a>
+    <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=6329+Miramar+Pkwy+Miramar+FL+33023" target="_blank" rel="noopener">Directions</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap foot-grid">
+    <div class="fcol">
+      <div class="mark">Naz <span>Roti Palace</span></div>
+      <p style="margin-top:10px;max-width:320px">Authentic, made-fresh Trinidadian roti, doubles and curry in Miramar, FL. Real Trini flavor, just like home.</p>
+    </div>
+    <div class="fcol">
+      <h4>Visit</h4>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=6329+Miramar+Pkwy+Miramar+FL+33023" target="_blank" rel="noopener">6329 Miramar Pkwy<br>Miramar, FL 33023</a>
+      <a href="tel:+19549873964">(954) 987-3964</a>
+    </div>
+    <div class="fcol">
+      <h4>Hours</h4>
+      <p>Mon – Fri · 11:30 AM – 8 PM</p>
+      <p>Saturday · 11:30 AM – 7 PM</p>
+      <p>Sunday · Closed</p>
+      <a href="https://www.facebook.com/nazrotipalace/" target="_blank" rel="noopener">Facebook →</a>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">© <span id="yr"></span> Naz Roti Palace · Miramar, Florida</div>
+</footer>
+
+<script>
+  const nav=document.getElementById('nav'),navlinks=document.getElementById('navlinks');
+  function toggleNav(){navlinks.classList.toggle('open');}
+  function closeNav(){navlinks.classList.remove('open');}
+  window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>40));
+  if(window.scrollY>40)nav.classList.add('scrolled');
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}});},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>{const r=el.getBoundingClientRect();if(r.top<window.innerHeight&&r.bottom>0){el.classList.add('visible','instant');}else io.observe(el);});
+</script>
+</body>
+</html>
