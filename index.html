@@ -69,8 +69,14 @@
   .navlinks a:hover{color:var(--turmeric-br)}
   .nav-call{border:1.5px solid var(--turmeric);color:var(--turmeric-br)!important;padding:8px 17px;border-radius:40px;font-weight:700;opacity:1!important}
   .nav-call:hover{background:var(--turmeric);color:var(--brown-deep)!important}
-  .burger{display:none;flex-direction:column;gap:5px;cursor:pointer}
-  .burger span{width:26px;height:2px;background:#fff}
+  .burger{display:none;position:relative;width:30px;height:22px;cursor:pointer}
+  .burger span{position:absolute;left:50%;top:50%;width:26px;height:2px;background:#fff;border-radius:1px;transition:transform .3s ease,opacity .2s ease}
+  .burger span:nth-child(1){transform:translate(-50%,-50%) translateY(-7px)}
+  .burger span:nth-child(2){transform:translate(-50%,-50%)}
+  .burger span:nth-child(3){transform:translate(-50%,-50%) translateY(7px)}
+  .burger.open span:nth-child(1){transform:translate(-50%,-50%) rotate(45deg)}
+  .burger.open span:nth-child(2){opacity:0}
+  .burger.open span:nth-child(3){transform:translate(-50%,-50%) rotate(-45deg)}
 
   /* ---- Hero ---- */
   .hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;color:#fff}
@@ -412,7 +418,7 @@
 
 <script>
   const nav=document.getElementById('nav'),navlinks=document.getElementById('navlinks');
-  function toggleNav(){navlinks.classList.toggle('open');}
+  function toggleNav(){navlinks.classList.toggle('open');document.getElementById('burger').classList.toggle('open');}
   function closeNav(){navlinks.classList.remove('open');}
   window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>40));
   if(window.scrollY>40)nav.classList.add('scrolled');
